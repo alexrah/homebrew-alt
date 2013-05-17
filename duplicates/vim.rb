@@ -12,6 +12,7 @@ class Vim < Formula
   def install
     system "./configure", "--prefix=#{prefix}",
                           "--mandir=#{man}",
+                          "--enable-cscope",
                           "--enable-gui=no",
                           "--without-x",
                           "--disable-nls",
